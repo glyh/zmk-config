@@ -49,6 +49,29 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        dqt_sqt: dqt_sqt {
+            compatible = "zmk,behavior-mod-morph";
+            label = "dqt_sqt";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DQT>,
+                <&kp SQT>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_comma: dot_comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "dot_comma";
+            #binding-cells = <0>;
+            bindings =
+                <&kp DOT>,
+                <&kp COMMA>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
+
         zero_five: zero_five {
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_FIVE";
