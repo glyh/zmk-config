@@ -42,10 +42,10 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q       &kp W        &kp F        &kp P   &kp B        &kp J           &kp L          &kp U             &kp Y   &kp DQT
-  &kp A  &mt LALT R  &mt LMETA S  &mt LCTRL T   &kp G        &kp M           &kp N          &kp E             &kp I     &kp O
-  &kp Z       &kp X        &kp C        &kp D   &kp V        &kp K           &kp H       &kp LPAR  &kp LEFT_BRACKET  &kp SEMI
-                          &trans     &sk LALT  &tog 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
+  &kp Q       &kp W                 &kp F             &kp P   &kp B        &kp J           &kp L          &kp U              &kp Y   &kp LESS_THAN
+  &kp A  &mt LALT R           &mt LMETA S       &mt LCTRL T   &kp G        &kp M           &kp N          &kp E              &kp I           &kp O
+  &kp Z       &kp X                 &kp C             &kp D   &kp V        &kp K           &kp H        &kp DOT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE
+                     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &tog 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
             >;
         };
 
