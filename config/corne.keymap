@@ -184,13 +184,13 @@
     combos {
         compatible = "zmk,combos";
 
-        NE_is_ESC {
-            bindings = <&kp ESCAPE>;
+        NE_is_TAB {
+            bindings = <&kp TAB>;
             key-positions = <16 17>;
         };
 
-        ST_is_TAB {
-            bindings = <&kp TAB>;
+        ST_is_ESC {
+            bindings = <&kp ESC>;
             key-positions = <12 13>;
         };
 
