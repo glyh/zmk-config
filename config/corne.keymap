@@ -189,7 +189,7 @@
             key-positions = <11 12>;
         };
 
-        new_combo {
+        EI_is_BKS {
             bindings = <&kp BACKSPACE>;
             key-positions = <17 18>;
         };
