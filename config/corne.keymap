@@ -39,16 +39,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        lbkt_rbkt: lbkt_rbkt {
-            compatible = "zmk,behavior-mod-morph";
-            label = "LBKT_RBKT";
-            #binding-cells = <0>;
-            bindings =
-                <&kp LEFT_BRACKET>,
-                <&kp RIGHT_BRACKET>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         lbrc_rbrc: lbrc_rbrc {
             compatible = "zmk,behavior-mod-morph";
             label = "LBRC_RBRC";
