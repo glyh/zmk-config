@@ -19,16 +19,12 @@
     };
 
     behaviors {
-        hm: homerow_mods {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS";
-            #binding-cells = <2>;
-            tapping-term-ms = <300>;
-            quick-tap-ms = <200>;
-            flavor = "tap-preferred";
-            bindings =
-                <&kp>,
-                <&kp>;
+        gresc: grave_escape {
+            compatible = "zmk,behavior-mod-morph";
+            label = "GRAVE_ESCAPE";
+            #binding-cells = <0>;
+            bindings = <&kp ESC>, <&kp GRAVE>;
+            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
 
@@ -45,7 +41,7 @@
   &kp Q       &kp W                 &kp F             &kp P   &kp B        &kp J           &kp L          &kp U              &kp Y   &kp LESS_THAN
   &kp A  &mt LALT R           &mt LMETA S       &mt LCTRL T   &kp G        &kp M           &kp N          &kp E              &kp I           &kp O
   &kp Z       &kp X                 &kp C             &kp D   &kp V        &kp K           &kp H        &kp DOT  &kp DOUBLE_QUOTES  &kp LEFT_BRACE
-                     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &tog 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
+                     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &to 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
             >;
         };
 
