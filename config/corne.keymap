@@ -127,7 +127,6 @@
         NE_is_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
-            layers = <>;
         };
 
         ST_is_SPC {
@@ -141,13 +140,18 @@
         };
 
         EI_is_SEMI {
-            bindings = <&kp SEMI>;
+            bindings = <&kp ENTER>;
             key-positions = <17 18>;
         };
 
         AR_is_COLON {
             bindings = <&kp COLON>;
             key-positions = <11 10>;
+        };
+
+        new_combo {
+            bindings = <&kp SEMI>;
+            key-positions = <18 19>;
         };
     };
 
