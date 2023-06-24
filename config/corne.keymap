@@ -159,6 +159,16 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        slashes: slashes {
+            compatible = "zmk,behavior-mod-morph";
+            label = "slashes";
+            #binding-cells = <0>;
+            bindings =
+                <&kp FSLH>,
+                <&kp BSLH>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -178,16 +188,6 @@
             bindings = <&kp ENTER>;
             key-positions = <11 12>;
         };
-
-        EI_is_SEMI {
-            bindings = <&kp SEMI>;
-            key-positions = <17 18>;
-        };
-
-        AR_is_COLON {
-            bindings = <&kp COLON>;
-            key-positions = <11 10>;
-        };
     };
 
     keymap {
@@ -206,8 +206,8 @@
         Symbols {
             bindings = <
      &kp AT  &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND     &kp ASTRK         &kp BSPC       &kp DEL
-  &kp TILDE       &lang_rang   &sub_add  &kp QUESTION     &kp FSLH    &four_nine     &zero_five      &one_six       &two_seven  &three_eight
-  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp BSLH    &kp K_MUTE   &voldn_volup  &bridn_briup  &kp PRINTSCREEN         &none
+  &kp TILDE       &lang_rang   &sub_add  &kp QUESTION     &slashes    &four_nine     &zero_five      &one_six       &two_seven  &three_eight
+  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &semi    &kp K_MUTE   &voldn_volup  &bridn_briup  &kp PRINTSCREEN         &none
                                  &trans         &none        &none         &none          &none    &kp RSHIFT
             >;
 
