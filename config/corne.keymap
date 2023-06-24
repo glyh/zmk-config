@@ -203,6 +203,11 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <17 18>;
         };
+
+        new_combo {
+            bindings = <&mo 2>;
+            key-positions = <32 33>;
+        };
     };
 
     keymap {
@@ -218,7 +223,7 @@
             >;
         };
 
-        Symbols {
+        Extras {
             bindings = <
      &kp AT  &kp EXCLAMATION  &kp POUND  &kp QUESTION  &kp PERCENT     &kp CARET  &kp AMPERSAND   &kp ASTRK  &kp DELETE    &kp DOLLAR
   &kp TILDE       &lang_rang   &sub_add    &dot_comma     &slashes    &four_nine     &zero_five    &one_six  &two_seven  &three_eight
@@ -226,7 +231,18 @@
                                   &none         &none        &none         &none          &none  &kp RSHIFT
             >;
 
-            label = "SYM";
+            label = "EXT";
+        };
+
+        Navigation {
+            bindings = <
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+                &none  &none  &none    &none  &none  &none
+            >;
+
+            label = "NAV";
         };
     };
 };
