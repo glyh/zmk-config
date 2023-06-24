@@ -160,7 +160,7 @@
                 <&kp GREATER_THAN>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
     };
 
     combos {
