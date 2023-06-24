@@ -134,8 +134,8 @@
             label = "bridn_briup";
             #binding-cells = <0>;
             bindings =
-                <&kp K_BRI_DN>,
-                <&kp K_BRI_UP>;
+                <&kp C_BRI_DN>,
+                <&kp C_BRI_UP>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
