@@ -139,6 +139,28 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        sub_add: sub_add {
+            compatible = "zmk,behavior-mod-morph";
+            label = "sub_add";
+            #binding-cells = <0>;
+            bindings =
+                <&kp MINUS>,
+                <&kp PLUS>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        lang_rang: lang_rang {
+            compatible = "zmk,behavior-mod-morph";
+            label = "lang_rang";
+            #binding-cells = <0>;
+            bindings =
+                <&kp LESS_THAN>,
+                <&kp GREATER_THAN>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        }
     };
 
     combos {
@@ -191,8 +213,8 @@
         Symbols {
             bindings = <
      &kp AT   &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND        &kp ASTRK              &kp BSPC               &kp DEL
-  &kp TILDE  &kp GREATER_THAN   &kp PLUS  &kp QUESTION     &kp FSLH    &four_nine     &zero_five         &one_six            &two_seven          &three_eight
-  &kp GRAVE     &kp LESS_THAN  &kp MINUS      &kp PIPE     &kp BSLH    &kp K_MUTE   &voldn_volup   &bridn_briup  &kp PRINTSCREEN  &none
+  &kp TILDE  &lang_rang   &sub_add  &kp QUESTION     &kp FSLH    &four_nine     &zero_five         &one_six            &two_seven          &three_eight
+  &kp GRAVE     &none  &none      &kp PIPE     &kp BSLH    &kp K_MUTE   &voldn_volup   &bridn_briup  &kp PRINTSCREEN  &none
                                   &trans         &none        &none         &none     &kp RSHIFT  &none
             >;
 
