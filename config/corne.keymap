@@ -113,9 +113,9 @@
             label = "DEF";
             bindings = <
   &kp Q       &kp W                 &kp F             &kp P  &kp B        &kp J           &kp L          &kp U              &kp Y  &kp LEFT_BRACE
-  &kp A  &mt LALT R           &mt LMETA S       &mt LCTRL T  &kp G        &kp M           &kp N          &kp E              &kp I           &kp O
+  &mt LALT A           &mt LMETA R       &mt LCTRL S &mt LSHIFT T    &kp G        &kp M           &kp N          &kp E              &kp I           &kp O
   &kp Z       &kp X                 &kp C             &kp D  &kp V        &kp K           &kp H        &kp DOT  &kp DOUBLE_QUOTES   &kp SEMICOLON
-                     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &to 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
+                     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &to 1    &kp SPACE  &none  &kp BACKSPACE
             >;
         };
 
