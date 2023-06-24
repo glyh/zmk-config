@@ -67,10 +67,10 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F      &kp P   &kp B        &kp J    &kp L     &kp U                  &kp Y   &kp DQT
-  &kp A  &kp R      &kp S      &kp T   &kp G        &kp M    &kp N     &kp E                  &kp I     &kp O
-  &kp Z  &kp X      &kp C      &kp D   &kp V        &kp K    &kp H  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMI
-                &kp LMETA  &kp LCTRL  &trans    &kp SPACE  &kp ESC    &trans
+  &kp Q  &kp W      &kp F     &kp P           &kp B        &kp J    &kp L     &kp U                  &kp Y   &kp DQT
+  &kp A  &kp R      &kp S     &kp T           &kp G        &kp M    &kp N     &kp E                  &kp I     &kp O
+  &kp Z  &kp X      &kp C     &kp D           &kp V        &kp K    &kp H  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMI
+                &sk LMETA  &sk LALT  &sk LEFT_SHIFT    &kp SPACE  &kp ESC    &trans
             >;
         };
 
