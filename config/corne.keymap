@@ -54,8 +54,8 @@
             label = "ZERO_FIVE";
             #binding-cells = <0>;
             bindings =
-                <&kp KP_N0>,
-                <&kp KP_N5>;
+                <&kp N0>,
+                <&kp N5>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -64,8 +64,8 @@
             label = "ONE_SIX";
             #binding-cells = <0>;
             bindings =
-                <&kp KP_N1>,
-                <&kp KP_N6>;
+                <&kp N1>,
+                <&kp N6>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -74,8 +74,8 @@
             label = "TWO_SEVEN";
             #binding-cells = <0>;
             bindings =
-                <&kp KP_N2>,
-                <&kp KP_N7>;
+                <&kp N2>,
+                <&kp N7>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -84,8 +84,8 @@
             label = "THREE_EIGHT";
             #binding-cells = <0>;
             bindings =
-                <&kp KP_N3>,
-                <&kp KP_N8>;
+                <&kp N3>,
+                <&kp N8>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -94,8 +94,8 @@
             label = "THREE_NINE";
             #binding-cells = <0>;
             bindings =
-                <&kp KP_N4>,
-                <&kp KP_N9>;
+                <&kp N4>,
+                <&kp N9>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
