@@ -89,9 +89,9 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        three_nine: three_nine {
+        four_nine: four_nine {
             compatible = "zmk,behavior-mod-morph";
-            label = "THREE_NINE";
+            label = "FOUR_NINE";
             #binding-cells = <0>;
             bindings =
                 <&kp N4>,
