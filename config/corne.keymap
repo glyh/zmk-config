@@ -104,9 +104,14 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        NE_is_ESC {
             bindings = <&kp ESCAPE>;
             key-positions = <16 17>;
+        };
+
+        ST_is_SPC {
+            bindings = <&kp SPACE>;
+            key-positions = <12 13>;
         };
     };
 
@@ -116,10 +121,10 @@
         Default {
             label = "DEF";
             bindings = <
-       &kp Q        &kp W        &kp F         &kp P  &kp B        &kp J  &kp L          &kp U              &kp Y     &lbrc_rbrc
-  &kp A  &kp R  &kp S  &kp T  &kp G        &kp M  &kp N          &kp E              &kp I          &kp O
-       &kp Z        &kp X        &kp C         &kp D  &kp V        &kp K  &kp H        &kp DOT  &kp DOUBLE_QUOTES  &kp SEMICOLON
-                            &lpar_rpar    &lbkt_rbkt  &to 1    &kp TAB &kp SPACE    &none
+  &kp Q  &kp W      &kp F       &kp P  &kp B      &kp J       &kp L       &kp U              &kp Y     &lbrc_rbrc
+  &kp A  &kp R      &kp S       &kp T  &kp G      &kp M       &kp N       &kp E              &kp I          &kp O
+  &kp Z  &kp X      &kp C       &kp D  &kp V      &kp K       &kp H     &kp DOT  &kp DOUBLE_QUOTES  &kp SEMICOLON
+                &kp LMETA  &kp LSHIFT  &to 1    &kp TAB  &lpar_rpar  &lbkt_rbkt
             >;
         };
 
