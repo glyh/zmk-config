@@ -49,7 +49,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         dqt_sqt: dqt_sqt {
             compatible = "zmk,behavior-mod-morph";
             label = "dqt_sqt";
@@ -60,7 +59,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         dot_comma: dot_comma {
             compatible = "zmk,behavior-mod-morph";
             label = "dot_comma";
@@ -70,8 +68,7 @@
                 <&kp COMMA>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
-
+        };
         zero_five: zero_five {
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_FIVE";
@@ -149,19 +146,19 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J       &kp L       &kp U              &kp Y     &lbrc_rbrc
-  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M       &kp N       &kp E              &kp I          &kp O
-  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K       &kp H     &kp DOT  &kp DOUBLE_QUOTES  &kp SEMICOLON
+  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J       &kp L       &kp U     &kp Y     &lbrc_rbrc
+  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M       &kp N       &kp E     &kp I          &kp O
+  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K       &kp H  &dot_comma  &dqt_sqt  &kp SEMICOLON
                 &kp LMETA  &kp LSHIFT  &to 1    &kp RCTRL  &lpar_rpar  &lbkt_rbkt
             >;
         };
 
         Extra {
             bindings = <
-       &none                   &none           &none                &none     &none         &none       &none     &none       &none         &none
-  &none  &kp GREATER_THAN  &kp PLUS  &kp QUESTION  &kp FSLH    &four_nine  &zero_five  &one_six  &two_seven  &three_eight
-       &none           &kp LESS_THAN       &kp MINUS             &kp PIPE  &kp BSLH         &none       &none     &none       &none         &none
-                                              &trans               &trans     &to 0        &trans       &none     &none
+  &none             &none      &none         &none     &none         &none       &none     &none       &none         &none
+  &none  &kp GREATER_THAN   &kp PLUS  &kp QUESTION  &kp FSLH    &four_nine  &zero_five  &one_six  &two_seven  &three_eight
+  &none     &kp LESS_THAN  &kp MINUS      &kp PIPE  &kp BSLH         &none       &none     &none       &none         &none
+                              &trans        &trans     &to 0        &trans       &none     &none
             >;
 
             label = "EXT";
