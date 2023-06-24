@@ -38,10 +38,10 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W          &kp F      &kp P           &kp B      &kp J      &kp L                 &kp U                  &kp Y  &kp SINGLE_QUOTE
-  &kp A  &kp R          &kp S      &kp T           &kp G      &kp M      &kp N                 &kp E                  &kp I             &kp O
-  &kp Z  &kp X          &kp C      &kp D           &kp V      &kp K      &kp H  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS     &kp SEMICOLON
-                &kp LEFT_META  &kp LCTRL  &kp LEFT_SHIFT    &kp TAB  &kp SPACE            &kp ESCAPE
+  &kp Q  &kp W      &kp F      &kp P       &kp B    &kp J      &kp L       &kp U     &kp Y  &kp APOS
+  &kp A  &kp R      &kp S      &kp T       &kp G    &kp M      &kp N       &kp E     &kp I     &kp O
+  &kp Z  &kp X      &kp C      &kp D       &kp V    &kp K      &kp H    &kp LPAR  &kp RPAR  &kp SEMI
+                &kp LMETA  &kp LCTRL  &kp LSHIFT    &to 0  &kp SPACE  &kp ESCAPE
             >;
         };
 
@@ -50,7 +50,7 @@
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+                  &trans  &trans  &trans     &to 0  &trans  &trans
             >;
 
             label = "FN";
