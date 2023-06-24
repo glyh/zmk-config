@@ -210,9 +210,9 @@
 
         Symbols {
             bindings = <
-     &kp AT  &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND     &kp ASTRK       &kp DELETE         &none
-  &kp TILDE       &lang_rang   &sub_add  &kp QUESTION     &slashes    &four_nine     &zero_five      &one_six       &two_seven  &three_eight
-  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp SEMI    &kp K_MUTE   &voldn_volup  &bridn_briup  &kp PRINTSCREEN         &none
+     &kp AT  &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND     &kp ASTRK           &kp DELETE         &none
+  &kp TILDE       &lang_rang   &sub_add  &kp QUESTION     &slashes    &four_nine     &zero_five      &one_six           &two_seven  &three_eight
+  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp SEMI    &kp K_MUTE   &voldn_volup  &bridn_briup  &kp LG(PRINTSCREEN)         &none
                                   &none         &none        &none         &none          &none    &kp RSHIFT
             >;
 
