@@ -37,17 +37,17 @@
 
         goto_default {
             bindings = <&to 0>;
-            key-positions = <34 6>;
+            key-positions = <34 30>;
         };
 
         goto_num_sym {
             bindings = <&to 1>;
-            key-positions = <34 16>;
+            key-positions = <34 31>;
         };
 
         goto_fn {
             bindings = <&to 2>;
-            key-positions = <26 34>;
+            key-positions = <34 32>;
         };
 
         lpar_mod_is_lbkt {
@@ -58,6 +58,21 @@
         rpar_mod_is_rbkt {
             bindings = <&kp RBKT>;
             key-positions = <28 34>;
+        };
+
+        new_combo {
+            bindings = <&kp LS(Q)>;
+            key-positions = <0 34>;
+        };
+
+        new_combo {
+            bindings = <&kp LS(W)>;
+            key-positions = <34 1>;
+        };
+
+        new_combo {
+            bindings = <&kp LS(F)>;
+            key-positions = <34>;
         };
     };
 
