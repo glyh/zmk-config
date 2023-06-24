@@ -156,19 +156,19 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J       &kp L       &kp U     &kp Y  &lbrc_rbrc
-  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M       &kp N       &kp E     &kp I       &kp O
-  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K       &kp H  &dot_comma  &dqt_sqt    &kp RALT
-                &kp LMETA  &kp LSHIFT  &to 1    &kp RCTRL  &lpar_rpar  &lbkt_rbkt
+  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J     &kp L       &kp U     &kp Y  &lbrc_rbrc
+  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M     &kp N       &kp E     &kp I       &kp O
+  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K     &kp H  &dot_comma  &dqt_sqt  &lbkt_rbkt
+                &kp LMETA  &kp LSHIFT  &mo 1    &kp RCTRL  &kp RALT  &lpar_rpar
             >;
         };
 
         Extra {
             bindings = <
-  &none             &none      &none         &none     &none         &none       &none     &none       &none         &none
-  &none  &kp GREATER_THAN   &kp PLUS  &kp QUESTION  &kp FSLH    &four_nine  &zero_five  &one_six  &two_seven  &three_eight
-  &none     &kp LESS_THAN  &kp MINUS      &kp PIPE  &kp BSLH         &none       &none     &none       &none         &none
-                              &trans        &trans     &to 0        &trans       &none     &none
+     &kp AT   &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND        &kp ASTRK              &kp BSPC               &kp DEL
+  &kp TILDE  &kp GREATER_THAN   &kp PLUS  &kp QUESTION     &kp FSLH    &four_nine     &zero_five         &one_six            &two_seven          &three_eight
+  &kp GRAVE     &kp LESS_THAN  &kp MINUS      &kp PIPE     &kp BSLH    &kp K_MUTE   &kp C_VOL_DN     &kp C_VOL_UP  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC
+                                  &trans        &trans        &none        &trans         &trans  &kp PRINTSCREEN
             >;
 
             label = "EXT";
