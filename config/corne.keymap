@@ -122,7 +122,7 @@
         Extra {
             bindings = <
   &none             &none      &none         &none     &none        &none     &none           &none     &none            &none
-  &none  &mt LALT GREATER_THAN   &mt LMETA PLUS  &mt LCTRL QUESTION  &kp FSLH    &kp KP_N4  &kp KP_N0  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3
+  &mt LALT A  &mt LMETA GREATER_THAN   &mt LCTRL PLUS  &mt LSHIFT QUESTION  &kp FSLH    &kp KP_N4  &kp KP_N0  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3
   &none     &kp LESS_THAN  &kp MINUS      &kp PIPE  &kp BSLH       &none     &none           &none     &none            &none
                                &none         &none     &to 0        &none      &mt RSHIFT ESC            &none
             >;
