@@ -59,21 +59,6 @@
             bindings = <&kp RBKT>;
             key-positions = <28 34>;
         };
-
-        new_combo {
-            bindings = <&kp LS(Q)>;
-            key-positions = <0 34>;
-        };
-
-        new_combo {
-            bindings = <&kp LS(W)>;
-            key-positions = <34 1>;
-        };
-
-        new_combo {
-            bindings = <&kp LS(F)>;
-            key-positions = <34>;
-        };
     };
 
     keymap {
@@ -85,7 +70,7 @@
   &kp Q  &kp W      &kp F     &kp P           &kp B        &kp J    &kp L     &kp U                  &kp Y   &kp DQT
   &kp A  &kp R      &kp S     &kp T           &kp G        &kp M    &kp N     &kp E                  &kp I     &kp O
   &kp Z  &kp X      &kp C     &kp D           &kp V        &kp K    &kp H  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMI
-                &sk LMETA  &sk LALT  &sk LEFT_SHIFT    &kp SPACE  &kp ESC    &trans
+                &sk LMETA  &sk LALT  &trans                &kp SPACE    &mt RSHIFT ESC    &trans
             >;
         };
 
