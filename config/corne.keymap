@@ -19,15 +19,15 @@
     };
 
     behaviors {
-        gresc: grave_escape {
+        lpar_rpar: lpar_rpar {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "LPAR_RPAR";
             #binding-cells = <0>;
             bindings =
-                <&kp ESC>,
-                <&kp GRAVE>;
+                <&kp LEFT_PARENTHESIS>,
+                <&kp RIGHT_PARENTHESIS>;
 
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
