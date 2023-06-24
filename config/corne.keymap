@@ -138,6 +138,16 @@
             bindings = <&kp TAB>;
             key-positions = <11 12>;
         };
+
+        EI_is_SEMI {
+            bindings = <&kp SEMI>;
+            key-positions = <17 18>;
+        };
+
+        AR_is_COLON {
+            bindings = <&kp COLON>;
+            key-positions = <11 10>;
+        };
     };
 
     keymap {
@@ -146,9 +156,9 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J       &kp L       &kp U     &kp Y     &lbrc_rbrc
-  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M       &kp N       &kp E     &kp I          &kp O
-  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K       &kp H  &dot_comma  &dqt_sqt  &kp SEMICOLON
+  &kp Q  &kp W      &kp F       &kp P  &kp B        &kp J       &kp L       &kp U     &kp Y  &lbrc_rbrc
+  &kp A  &kp R      &kp S       &kp T  &kp G        &kp M       &kp N       &kp E     &kp I       &kp O
+  &kp Z  &kp X      &kp C       &kp D  &kp V        &kp K       &kp H  &dot_comma  &dqt_sqt    &kp RALT
                 &kp LMETA  &kp LSHIFT  &to 1    &kp RCTRL  &lpar_rpar  &lbkt_rbkt
             >;
         };
