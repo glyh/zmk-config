@@ -179,16 +179,6 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        // prscrn: prscrn {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     label = "prscrn";
-        //     #binding-cells = <0>;
-        //     bindings =
-        //         <&kp PRINTSCREEN>,
-        //         <&kp LG(PRINTSCREEN)>;
-        //     mods = <(MOD_LSFT|MOD_RSFT)>;
-        // };
     };
 
     combos {
