@@ -49,6 +49,57 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        zero_five: zero_five {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_FIVE";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N0>,
+                <&kp KP_N5>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        one_six: one_six {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ONE_SIX";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N1>,
+                <&kp KP_N6>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        two_seven: two_seven {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TWO_SEVEN";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N2>,
+                <&kp KP_N7>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        three_eight: three_eight {
+            compatible = "zmk,behavior-mod-morph";
+            label = "THREE_EIGHT";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N3>,
+                <&kp KP_N8>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+        three_nine: three_nine {
+            compatible = "zmk,behavior-mod-morph";
+            label = "THREE_NINE";
+            #binding-cells = <0>;
+            bindings =
+                <&kp KP_N4>,
+                <&kp KP_N9>;
+
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -70,7 +121,7 @@
 
         Extra {
             bindings = <
-  &none             &none      &none         &none     &none        &none     &kp N7           &kp N8     &kp N9            &none
+  &none             &none      &none         &none     &none        &none     &none           &none     &none            &none
   &none  &mt LALT GREATER_THAN   &mt LMETA PLUS  &mt LCTRL QUESTION  &kp FSLH    &kp KP_N4  &kp KP_N0  &kp KP_NUMBER_1  &kp KP_N2  &kp KP_NUMBER_3
   &none     &kp LESS_THAN  &kp MINUS      &kp PIPE  &kp BSLH       &none     &none           &none     &none            &none
                                &none         &none     &to 0        &none      &mt RSHIFT ESC            &none
