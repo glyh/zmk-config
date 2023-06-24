@@ -32,28 +32,46 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        goto_default {
+            bindings = <&to 0>;
+            key-positions = <34 6>;
+        };
+
+        goto_num_sym {
+            bindings = <&to 1>;
+            key-positions = <34 16>;
+        };
+
+        goto_fn {
+            bindings = <&to 2>;
+            key-positions = <26 34>;
+        };
+
+        lpar_mod_is_lbkt {
+            bindings = <&kp LBKT>;
+            key-positions = <27 34>;
+        };
+
+        rpar_mod_is_rbkt {
+            bindings = <&kp RBKT>;
+            key-positions = <28 34>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F      &kp P       &kp B    &kp J      &kp L       &kp U     &kp Y  &kp APOS
-  &kp A  &kp R      &kp S      &kp T       &kp G    &kp M      &kp N       &kp E     &kp I     &kp O
-  &kp Z  &kp X      &kp C      &kp D       &kp V    &kp K      &kp H    &kp LPAR  &kp RPAR  &kp SEMI
-                &kp LMETA  &kp LCTRL  &kp LSHIFT    &to 0  &kp SPACE  &kp ESCAPE
+  &kp Q  &kp W      &kp F      &kp P   &kp B        &kp J    &kp L     &kp U                  &kp Y   &kp DQT
+  &kp A  &kp R      &kp S      &kp T   &kp G        &kp M    &kp N     &kp E                  &kp I     &kp O
+  &kp Z  &kp X      &kp C      &kp D   &kp V        &kp K    &kp H  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMI
+                &kp LMETA  &kp LCTRL  &trans    &kp SPACE  &kp ESC    &trans
             >;
-        };
-
-        Function {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans     &to 0  &trans  &trans
-            >;
-
-            label = "FN";
         };
 
         Number_Symbol {
@@ -65,6 +83,17 @@
             >;
 
             label = "NumSym";
+        };
+
+        Function {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans     &to 0  &trans  &trans
+            >;
+
+            label = "FN";
         };
     };
 };
