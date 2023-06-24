@@ -178,7 +178,7 @@
                 <&kp LG(PRINTSCREEN)>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
-        }
+        };
     };
 
     combos {
