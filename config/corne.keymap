@@ -139,7 +139,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         sub_add: sub_add {
             compatible = "zmk,behavior-mod-morph";
             label = "sub_add";
@@ -150,7 +149,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
         lang_rang: lang_rang {
             compatible = "zmk,behavior-mod-morph";
             label = "lang_rang";
@@ -207,10 +205,10 @@
 
         Symbols {
             bindings = <
-     &kp AT   &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND        &kp ASTRK              &kp BSPC               &kp DEL
-  &kp TILDE  &lang_rang   &sub_add  &kp QUESTION     &kp FSLH    &four_nine     &zero_five         &one_six            &two_seven          &three_eight
-  &kp GRAVE     &none  &none      &kp PIPE     &kp BSLH    &kp K_MUTE   &voldn_volup   &bridn_briup  &kp PRINTSCREEN  &none
-                                  &trans         &none        &none         &none     &kp RSHIFT  &none
+     &kp AT  &kp EXCLAMATION  &kp POUND    &kp DOLLAR  &kp PERCENT     &kp CARET  &kp AMPERSAND     &kp ASTRK         &kp BSPC       &kp DEL
+  &kp TILDE       &lang_rang   &sub_add  &kp QUESTION     &kp FSLH    &four_nine     &zero_five      &one_six       &two_seven  &three_eight
+  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp BSLH    &kp K_MUTE   &voldn_volup  &bridn_briup  &kp PRINTSCREEN         &none
+                                 &trans         &none        &none         &none          &none    &kp RSHIFT
             >;
 
             label = "SYM";
