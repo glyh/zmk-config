@@ -42,33 +42,22 @@
         Default {
             label = "DEF";
             bindings = <
-  &kp Q  &kp W      &kp F     &kp P   &kp B        &kp J           &kp L     &kp U                  &kp Y   &kp DQT
-  &kp A  &kp R      &kp S     &kp T   &kp G        &kp M           &kp N     &kp E                  &kp I     &kp O
-  &kp Z  &kp X      &kp C     &kp D   &kp V        &kp K           &kp H  &kp LPAR  &kp RIGHT_PARENTHESIS  &kp SEMI
-                &sk LMETA  &sk LALT  &trans    &kp SPACE  &mt RSHIFT ESC    &trans
+  &kp Q       &kp W        &kp F        &kp P   &kp B        &kp J           &kp L          &kp U             &kp Y   &kp DQT
+  &kp A  &mt LALT R  &mt LMETA S  &mt LCTRL T   &kp G        &kp M           &kp N          &kp E             &kp I     &kp O
+  &kp Z       &kp X        &kp C        &kp D   &kp V        &kp K           &kp H       &kp LPAR  &kp LEFT_BRACKET  &kp SEMI
+                          &trans     &sk LALT  &tog 1    &kp SPACE  &mt RSHIFT ESC  &kp BACKSPACE
             >;
         };
 
-        Number_Symbol {
+        Extra {
             bindings = <
-  &trans      &trans           &trans             &trans    &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-  &trans   &kp COMMA   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp FSLH    &trans  &kp N4  &kp N5  &kp N6  &trans
-  &trans  &kp PERIOD  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BSLH    &kp N0  &kp N1  &kp N2  &kp N3  &trans
-                               &trans             &trans    &trans    &trans  &trans  &trans
+  &none       &none            &none              &none     &none     &none  &kp N7  &kp N8  &kp N9  &none
+  &none   &kp COMMA   &kp LEFT_BRACE   &kp LEFT_BRACKET  &kp FSLH     &none  &kp N4  &kp N5  &kp N6  &none
+  &none  &kp PERIOD  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp BSLH    &kp N0  &kp N1  &kp N2  &kp N3  &none
+                               &none              &none     &to 0     &none   &none   &none
             >;
 
-            label = "NumSym";
-        };
-
-        Function {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans     &to 0  &trans  &trans
-            >;
-
-            label = "FN";
+            label = "EXT";
         };
     };
 };
