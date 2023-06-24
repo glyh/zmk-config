@@ -220,10 +220,10 @@
 
         Symbols {
             bindings = <
-     &kp AT  &kp EXCLAMATION  &kp POUND  &kp QUESTION  &kp PERCENT     &kp CARET  &kp AMPERSAND     &kp ASTRK  &kp DELETE    &kp DOLLAR
-  &kp TILDE       &lang_rang   &sub_add    &dot_comma     &slashes    &four_nine     &zero_five      &one_six  &two_seven  &three_eight
-  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp SEMI    &kp K_MUTE   &voldn_volup  &bridn_briup     &prscrn         &none
-                                  &none         &none        &none         &none          &none    &kp RSHIFT
+     &kp AT  &kp EXCLAMATION  &kp POUND  &kp QUESTION  &kp PERCENT     &kp CARET  &kp AMPERSAND   &kp ASTRK  &kp DELETE    &kp DOLLAR
+  &kp TILDE       &lang_rang   &sub_add    &dot_comma     &slashes    &four_nine     &zero_five    &one_six  &two_seven  &three_eight
+  &kp GRAVE   &kp UNDERSCORE  &kp EQUAL      &kp PIPE     &kp SEMI    &kp K_MUTE   &voldn_volup      &kp F5     &prscrn  &bridn_briup
+                                  &none         &none        &none         &none          &none  &kp RSHIFT
             >;
 
             label = "SYM";
