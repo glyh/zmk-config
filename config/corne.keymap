@@ -145,10 +145,10 @@
 
         Base {
             bindings = <
-       &kp Q        &kp W         &kp F         &kp P      &kp B          &kp J            &kp L       &kp U       &kp Y    &dqt_sqt
-  &mt LALT A  &mt LMETA R   &mt LCTRL S  &mt LSHIFT T      &kp G          &kp M            &mt RSHIFT N       &mt RCTRL E       &mt RMETA I       &mt RALT O
-       &kp Z        &kp X         &kp C         &kp D      &kp V          &kp K            &kp H  &lpar_rpar  &lbkt_rbkt  &lbrc_rbrc
-                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE   &lt 6 DEL
+       &kp Q        &kp W         &kp F         &kp P      &kp B          &kp J            &kp L        &kp U        &kp Y    &dqt_sqt
+  &mt LALT A  &mt LMETA R   &mt LCTRL S  &mt LSHIFT T      &kp G          &kp M     &mt RSHIFT N  &mt RCTRL E  &mt RMETA I  &mt RALT O
+     &lt 7 Z        &kp X         &kp C         &kp D      &kp V          &kp K            &kp H   &lpar_rpar   &lbkt_rbkt  &lbrc_rbrc
+                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE    &lt 6 DEL
             >;
         };
 
@@ -198,6 +198,15 @@
         };
 
         Function {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Button {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
