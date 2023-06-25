@@ -183,7 +183,7 @@
         Symbol {
             bindings = <
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp CAPS       &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT
+  &trans  &trans  &trans  &trans  &trans    &trans  &kp RSHFT   &kp RCTRL  &kp RMETA    &kp RALT
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans  &trans
             >;
