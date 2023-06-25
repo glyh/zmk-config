@@ -149,7 +149,7 @@
        &kp Q        &kp W         &kp F         &kp P      &kp B          &kp J            &kp L        &kp U        &kp Y    &dqt_sqt
   &mt LALT A  &mt LMETA R   &mt LCTRL S  &mt LSHIFT T      &kp G          &kp M     &mt RSHIFT N  &mt RCTRL E  &mt RMETA I  &mt RALT O
      &lt 7 Z        &kp X         &kp C         &kp D      &kp V          &kp K            &kp H   &lpar_rpar   &lbkt_rbkt  &lbrc_rbrc
-                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE    &lt 6 DEL
+                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DEL
             >;
         };
 
@@ -180,21 +180,21 @@
             >;
         };
 
-        Symbol {
+        Number {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &kp RSHFT   &kp RCTRL  &kp RMETA    &kp RALT
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+  &lbkt_rbkt  &kp N7   &kp N8  &kp N9  &lbrc_rbrc    &none      &none      &none      &none     &none
+    &kp SEMI  &kp N4   &kp N5  &kp N6   &kp EQUAL    &none  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
+   &kp GRAVE  &kp N1   &kp N2  &kp N3    &kp BSLH    &none      &none      &none      &none     &none
+                      &kp DOT  &kp N0   &kp MINUS    &none      &none      &none
             >;
         };
 
-        Number {
+        Symbol {
             bindings = <
-   &kp LBKT  &kp N7   &kp N8  &kp N9   &kp RBKT    &none      &none      &none      &none     &none
-   &kp SEMI  &kp N4   &kp N5  &kp N6  &kp EQUAL    &none  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
-  &kp GRAVE  &kp N1   &kp N2  &kp N3   &kp BSLH    &none      &none      &none      &none     &none
-                     &kp DOT  &kp N0  &kp MINUS    &none      &none      &none
+       &kp LBRC  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RBRC)            &none      &none      &none      &none     &none
+  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)    &kp LS(LSHFT)  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
+  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)     &kp LS(PIPE)     &trans  &kp COMMA    &kp DOT  &kp FSLH
+                                   &kp COMMA        &kp DOT      &kp FSLH           &trans     &trans     &trans
             >;
         };
 
