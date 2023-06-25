@@ -172,7 +172,7 @@
 
         Mouse {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &kp K_REDO    &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
   &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
                   &trans  &trans  &trans    &trans  &trans  &trans
