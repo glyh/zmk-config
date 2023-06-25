@@ -118,50 +118,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        lalt_chord {
-            bindings = <&kp LALT>;
-            key-positions = <0 10>;
-            layers = <>;
-        };
-
-        lgui_chord {
-            bindings = <&kp LMETA>;
-            key-positions = <1 11>;
-            layers = <>;
-        };
-
-        lshfit_chord {
-            bindings = <&kp LSHIFT>;
-            key-positions = <2 12>;
-            layers = <>;
-        };
-
-        lctrl_chord {
-            bindings = <&kp LCTRL>;
-            key-positions = <3 13>;
-            layers = <>;
-        };
-
-        ralt_chord {
-            bindings = <&kp RALT>;
-            key-positions = <9 19>;
-        };
-
-        rctrl_chord {
-            bindings = <&kp RCTRL>;
-            key-positions = <8 18>;
-        };
-
-        rgui_chord {
-            bindings = <&kp RMETA>;
-            key-positions = <17 7>;
-        };
-
-        rshift_chord {
-            bindings = <&kp RSHIFT>;
-            key-positions = <6 16>;
-        };
     };
 
     keymap {
