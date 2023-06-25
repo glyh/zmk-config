@@ -115,25 +115,25 @@
     combos {
         compatible = "zmk,combos";
 
-        new_combo {
+        lalt_chord {
             bindings = <&kp LALT>;
             key-positions = <10 11>;
             layers = <8>;
         };
 
-        new_combo {
+        lgui_chord {
             bindings = <&kp LMETA>;
             key-positions = <11 12>;
             layers = <8>;
         };
 
-        new_combo {
+        lshfit_chord {
             bindings = <&kp LSHIFT>;
             key-positions = <12 13>;
             layers = <8>;
         };
 
-        new_combo {
+        lctrl_chord {
             bindings = <&kp LCTRL>;
             key-positions = <13 14>;
             layers = <8>;
