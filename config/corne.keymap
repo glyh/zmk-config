@@ -191,10 +191,10 @@
 
         Symbol {
             bindings = <
-       &kp LBRC  &kp LS(AMPS)   &kp LS(STAR)   &kp LS(LPAR)  &kp LS(RBRC)            &none      &none      &none      &none     &none
-  &kp LS(COLON)  &kp LS(DLLR)  &kp LS(PRCNT)  &kp LS(CARET)  &kp LS(PLUS)    &kp LS(LSHFT)  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
-  &kp LS(TILDE)  &kp LS(EXCL)     &kp LS(AT)  &kp LS(POUND)  &kp LS(PIPE)     &kp LS(PIPE)     &trans  &kp COMMA    &kp DOT  &kp FSLH
-                                   &kp COMMA        &kp DOT      &kp FSLH           &trans     &trans     &trans
+       &kp LBRC  &kp AMPS   &kp STAR   &kp LPAR  &kp RBRC            &none      &none      &none      &none     &none
+  &kp COLON  &kp DLLR  &kp PRCNT  &kp CARET  &kp PLUS    &none  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
+  &kp TILDE  &kp EXCL     &kp AT  &kp POUND  &kp PIPE     &none     &none &none &none &none &none 
+                                   &kp COMMA        &kp DOT      &kp FSLH &none &none &none 
             >;
         };
 
