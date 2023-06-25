@@ -135,7 +135,7 @@
         };
 
         new_combo {
-            bindings = <&mo 2>;
+            bindings = <&mo 0>;
             key-positions = <32 33>;
         };
     };
@@ -143,36 +143,67 @@
     keymap {
         compatible = "zmk,keymap";
 
-        Default {
-            label = "DEF";
+        Base {
             bindings = <
-  &kp Q  &kp W      &kp F      &kp P  &kp B       &kp J      &kp L       &kp U       &kp Y       &none
-  &kp A  &kp R      &kp S      &kp T  &kp G       &kp M      &kp N       &kp E       &kp I       &kp O
-  &kp Z  &kp X      &kp C      &kp D  &kp V       &kp K      &kp H  &lpar_rpar  &lbkt_rbkt  &lbrc_rbrc
-                &kp LMETA  &kp LCTRL  &mo 1    &kp RALT  &kp SPACE  &kp RSHIFT
+  &kp Q  &kp W         &kp F        &kp P      &kp B       &kp J      &kp L       &kp U       &kp Y    &dqt_sqt
+  &kp A  &kp R         &kp S        &kp T      &kp G       &kp M      &kp N       &kp E       &kp I       &kp O
+  &kp Z  &kp X         &kp C        &kp D      &kp V       &kp K      &kp H  &lpar_rpar  &lbkt_rbkt  &lbrc_rbrc
+                &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &kp RALT  &kp SPACE  &kp RSHIFT
             >;
         };
 
-        Extras {
+        Media {
             bindings = <
-     &kp F1     &kp F2     &kp F3    &kp F4      &kp F5    &kp K_MUTE  &voldn_volup   &prscrn  &bridn_briup   &none
-     &kp N1     &kp N2     &kp N3    &kp N4      &kp N5        &kp N6        &kp N7    &kp N8        &kp N9  &kp N0
-  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp BSLH  &dot_comma    &lang_rang      &kp FSLH  &kp SEMI      &dqt_sqt   &none
-                           &trans    &trans      &trans        &trans        &trans    &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
             >;
-
-            label = "EXT";
         };
 
         Navigation {
             bindings = <
-    &kp LG(N1)    &kp LG(N2)        &kp LG(N3)     &kp LG(N4)   &kp LG(N5)         &none  &kp LC(LS(TAB))  &kp PAGE_DOWN  &kp PAGE_UP    &kp LC(TAB)
-  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(UP_ARROW)  &kp LG(RIGHT)  &kp LG(TAB)    &kp RSHIFT         &kp LEFT       &kp DOWN       &kp UP      &kp RIGHT
-    &kp LG(N6)    &kp LG(N7)        &kp LG(N8)     &kp LG(N9)   &kp LG(N0)         &none     &kp LC(LEFT)       &kp HOME      &kp END  &kp LC(RIGHT)
-                                         &none          &none        &none         &none            &none          &none
+     &none      &none      &none       &none  &none    &kp K_REDO    &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
+  &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT  &none      &kp CAPS       &kp LEFT    &kp DOWN     &kp UP   &kp RIGHT
+     &none      &none      &none       &none  &none    &kp INSERT       &kp HOME   &kp PG_DN  &kp PG_UP     &kp END
+                           &none       &none  &none     &kp ENTER  &kp BACKSPACE     &kp DEL
             >;
+        };
 
-            label = "NAV";
+        Mouse {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Symbol {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Number {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
+
+        Function {
+            bindings = <
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+                  &trans  &trans  &trans    &trans  &trans  &trans
+            >;
         };
     };
 };
