@@ -209,8 +209,8 @@
         Button {
             bindings = <
   &kp K_UNDO  &kp K_CUT     &kp K_COPY  &kp K_PASTE  &kp K_REDO           &kp K_REDO  &kp K_PASTE     &kp K_COPY          &kp K_CUT   &kp K_UNDO
-    &kp LALT  &kp LMETA      &kp LCTRL   &kp LSHIFT       &none                &none    &kp RSHFT      &kp RCTRL          &kp RMETA     &kp RALT
-       &none      &kp Q          &kp Q      &kp TAB     &kp TAB    &kp LS(LC(LSHFT))  &kp LC(TAB)  &kp LC(LCTRL)  &kp LS(LC(LSHFT))  &kp LC(TAB)
+    &kp LALT  &kp LMETA      &kp LCTRL   &kp LSHIFT       &kp K_UNDO                &kp K_UNDO    &kp RSHFT      &kp RCTRL          &kp RMETA     &kp RALT
+  &none  &kp K_CUT     &kp K_COPY  &kp K_PASTE  &kp K_REDO           &kp K_REDO  &kp K_PASTE     &kp K_COPY          &kp K_CUT   &none
                          &kp LC(LCTRL)      &kp TAB     &kp TAB              &kp TAB      &kp TAB        &kp TAB
             >;
         };
