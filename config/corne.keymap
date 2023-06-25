@@ -157,7 +157,7 @@
             bindings = <
      &none      &none      &none       &none  &none         &none             &none         &none         &none         &none
   &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT  &none         &none        &kp K_PREV  &kp K_VOL_UP  &kp K_VOL_UP    &kp K_NEXT
-     &none      &none      &none       &none  &none         &none        &bt BT_CLR    &bt BT_PRV    &bt BT_NXT  &bt BT_SEL 3
+     &none      &none      &none       &none  &none         &bt BT_CLR        &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3
                            &none       &none  &none    &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE
             >;
         };
