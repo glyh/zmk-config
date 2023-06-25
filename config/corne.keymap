@@ -115,29 +115,28 @@
     combos {
         compatible = "zmk,combos";
 
-        NE_is_TAB {
-            bindings = <&kp TAB>;
-            key-positions = <16 17>;
-        };
-
-        ST_is_ESC {
-            bindings = <&kp ESC>;
-            key-positions = <12 13>;
-        };
-
-        RS_is_ENT {
-            bindings = <&kp ENTER>;
-            key-positions = <11 12>;
-        };
-
-        EI_is_BKS {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <17 18>;
+        new_combo {
+            bindings = <&kp LALT>;
+            key-positions = <10 11>;
+            layers = <8>;
         };
 
         new_combo {
-            bindings = <&mo 0>;
-            key-positions = <32 33>;
+            bindings = <&kp LMETA>;
+            key-positions = <11 12>;
+            layers = <8>;
+        };
+
+        new_combo {
+            bindings = <&kp LSHIFT>;
+            key-positions = <12 13>;
+            layers = <8>;
+        };
+
+        new_combo {
+            bindings = <&kp LCTRL>;
+            key-positions = <13 14>;
+            layers = <8>;
         };
     };
 
@@ -149,14 +148,14 @@
        &kp Q        &kp W         &kp F         &kp P      &kp B          &kp J            &kp L        &kp U        &kp Y    &dqt_sqt
   &mt LALT A  &mt LMETA R   &mt LCTRL S  &mt LSHIFT T      &kp G          &kp M     &mt RSHIFT N  &mt RCTRL E  &mt RMETA I  &mt RALT O
      &lt 7 Z        &kp X         &kp C         &kp D      &kp V          &kp K            &kp H    &kp COMMA      &kp DOT    &kp FSLH
-                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DEL
+                           &lt 8 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 5 ENTER  &lt 4 BACKSPACE    &lt 6 DEL
             >;
         };
 
         Media {
             bindings = <
      &none      &none      &none       &none  &none         &none             &none         &none         &none         &none
-  &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT  &none         &none        &kp K_PREV  &kp K_VOL_UP  &kp K_VOL_UP    &kp K_NEXT
+  &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT  &none         &none        &kp K_PREV  &kp K_VOL_DN  &kp K_VOL_UP    &kp K_NEXT
      &none      &none      &none       &none  &none    &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
                            &none       &none  &none    &kp K_STOP  &kp K_PLAY_PAUSE    &kp K_MUTE
             >;
@@ -200,7 +199,7 @@
 
         Function {
             bindings = <
-  &kp F12  &kp F7      &kp F8     &kp F9  &kp PRINTSCREEN    &none      &none      &none      &none     &none
+  &kp F12  &kp F7      &kp F8     &kp F9          &prscrn    &none      &none      &none      &none     &none
   &kp F11  &kp F4      &kp F5     &kp F6   &kp SCROLLLOCK    &none  &kp RSHFT  &kp RCTRL  &kp RMETA  &kp RALT
   &kp F10  &kp F1      &kp F2     &kp F3  &kp PAUSE_BREAK    &none      &none      &none      &none     &none
                    &kp K_MENU  &kp SPACE          &kp TAB    &none      &none      &none
@@ -213,6 +212,15 @@
     &kp LALT  &kp LMETA   &kp LCTRL   &kp LSHIFT  &kp K_UNDO    &kp K_UNDO    &kp RSHFT   &kp RCTRL  &kp RMETA    &kp RALT
        &none  &kp K_CUT  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT       &none
                           &kp LCTRL      &kp TAB     &kp TAB       &kp TAB      &kp TAB     &kp TAB
+            >;
+        };
+
+        Test {
+            bindings = <
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none
+                &none  &none  &none    &none  &none  &none
             >;
         };
     };
