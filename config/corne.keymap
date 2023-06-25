@@ -145,10 +145,10 @@
 
         Base {
             bindings = <
-  &kp Q  &kp W         &kp F        &kp P      &kp B       &kp J      &kp L       &kp U       &kp Y    &dqt_sqt
-  &kp A  &kp R         &kp S        &kp T      &kp G       &kp M      &kp N       &kp E       &kp I       &kp O
-  &kp Z  &kp X         &kp C        &kp D      &kp V       &kp K      &kp H  &lpar_rpar  &lbkt_rbkt  &lbrc_rbrc
-                &lt 1 ESCAPE  &lt 2 SPACE  &lt 3 TAB    &kp RALT  &kp SPACE  &kp RSHIFT
+       &kp Q        &kp W         &kp F         &kp P      &kp B          &kp J            &kp L       &kp U       &kp Y    &dqt_sqt
+  &mt LALT A  &mt LMETA R   &mt LCTRL S  &mt LSHIFT T      &kp G          &kp M            &kp N       &kp E       &kp I       &kp O
+       &kp Z        &kp X         &kp C         &kp D      &kp V          &kp K            &kp H  &lpar_rpar  &lbkt_rbkt  &lbrc_rbrc
+                           &lt 1 ESCAPE   &lt 2 SPACE  &lt 3 TAB    &lt 4 ENTER  &lt 5 BACKSPACE   &lt 6 DEL
             >;
         };
 
@@ -172,10 +172,10 @@
 
         Mouse {
             bindings = <
-  &trans  &trans  &trans  &trans  &trans    &kp K_REDO    &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
-  &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT &trans &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans  &trans
+    &trans     &trans     &trans      &trans  &trans    &kp K_REDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_UNDO
+  &kp LALT  &kp LMETA  &kp LCTRL  &kp LSHIFT  &trans        &trans       &trans      &trans     &trans      &trans
+    &trans     &trans     &trans      &trans  &trans        &trans       &trans      &trans     &trans      &trans
+                          &trans      &trans  &trans        &trans       &trans      &trans
             >;
         };
 
