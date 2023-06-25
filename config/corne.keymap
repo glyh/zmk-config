@@ -69,56 +69,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        zero_five: zero_five {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ZERO_FIVE";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N0>,
-                <&kp N5>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        one_six: one_six {
-            compatible = "zmk,behavior-mod-morph";
-            label = "ONE_SIX";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N1>,
-                <&kp N6>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        two_seven: two_seven {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TWO_SEVEN";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N2>,
-                <&kp N7>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        three_eight: three_eight {
-            compatible = "zmk,behavior-mod-morph";
-            label = "THREE_EIGHT";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N3>,
-                <&kp N8>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        four_nine: four_nine {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FOUR_NINE";
-            #binding-cells = <0>;
-            bindings =
-                <&kp N4>,
-                <&kp N9>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         voldn_volup: voldn_volup {
             compatible = "zmk,behavior-mod-morph";
             label = "voldn_volup";
@@ -139,16 +89,6 @@
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-        sub_add: sub_add {
-            compatible = "zmk,behavior-mod-morph";
-            label = "sub_add";
-            #binding-cells = <0>;
-            bindings =
-                <&kp MINUS>,
-                <&kp PLUS>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
         lang_rang: lang_rang {
             compatible = "zmk,behavior-mod-morph";
             label = "lang_rang";
@@ -156,16 +96,6 @@
             bindings =
                 <&kp LESS_THAN>,
                 <&kp GREATER_THAN>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-        slashes: slashes {
-            compatible = "zmk,behavior-mod-morph";
-            label = "slashes";
-            #binding-cells = <0>;
-            bindings =
-                <&kp FSLH>,
-                <&kp BSLH>;
 
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -225,10 +155,10 @@
 
         Extras {
             bindings = <
-     &kp F1     &kp F2     &kp F3    &kp F4     &kp F5    &kp K_MUTE  &voldn_volup   &prscrn  &bridn_briup   &none
-     &kp N1     &kp N2     &kp N3    &kp N4     &kp N5        &kp N6        &kp N7    &kp N8        &kp N9  &kp N0
-  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp BSLH  &kp COMMA       &kp DOT      &kp FSLH  &kp SEMI      &dqt_sqt   &none
-                           &trans    &trans     &trans        &trans        &trans    &trans
+     &kp F1     &kp F2     &kp F3    &kp F4      &kp F5    &kp K_MUTE  &voldn_volup   &prscrn  &bridn_briup   &none
+     &kp N1     &kp N2     &kp N3    &kp N4      &kp N5        &kp N6        &kp N7    &kp N8        &kp N9  &kp N0
+  &kp GRAVE  &kp MINUS  &kp EQUAL  &kp BSLH  &dot_comma    &lang_rang      &kp FSLH  &kp SEMI      &dqt_sqt   &none
+                           &trans    &trans      &trans        &trans        &trans    &trans
             >;
 
             label = "EXT";
